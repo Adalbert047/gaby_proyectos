@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+
+
+<body>
+    <div class="container">
+        <div class="categories">
+            <h2>CATEGORIES</h2>
+            <ul>
+            </ul>
+        </div>
+        <div id="container-products">
+            <div class="categorie-title">
+                <h1>{{Nombre categoria seleccionada}}</h1>
+                <br>
+                <h4>Total productos {{cantidad}}</h4>
+            </div>
+
+            <div class="products">
+                <div class="product">
+                    <h3>Nombre</h3>
+                    <div class="product-circle">
+                        <img src="https://i.dummyjson.com/data/products/1/1.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <div>
+                            <span>Precio: $1000</span>
+                        </div>
+
+                        <div>
+                            <span>Stock: 100 pza</span>
+                        </div>
+                        <div>
+                            <span>Descuento: $700</span>
+                        </div>
+                        <div>
+                            <span>Brand: Apple</span>
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <button class="btn btn-buy">Agregar</button>
+                        <button class="btn btn-danger">Agregar</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <template id="template-categories">
+        <li class="category">
+            <div>
+                <a href="#">
+                </a>
+            </div>
+        </li>
+    </template>
+
+    <template id="template-product">
+        <div class="product">
+            <h3>Nombre</h3>
+            <div class="product-circle">
+                <img src="https://i.dummyjson.com/data/products/1/1.jpg" alt="">
+            </div>
+            <div class="info">
+                <div class="price">
+                    <span>Precio: $1000</span>
+                </div>
+
+                <div class="stock">
+                    <span>Stock: 100 pza</span>
+                </div>
+                <div class="off">
+                    <span>Descuento: $700</span>
+                </div>
+                <div class="brand">
+                    <span>Brand: Apple</span>
+                </div>
+            </div>
+            <div class="buttons">
+                <button class="btn btn-buy">Agregar</button>
+                <button class="btn btn-danger">Eliminar</button>
+            </div>
+        </div>
+    </template>
+</body>
+
+<script src="script.js"></script>
+
+</html>
